@@ -1,0 +1,76 @@
+
+@media only screen and (max-width: 1100px) {
+    .BillSection{
+        font-size: 0.8em;
+    }
+    .BillingCard{
+        width: 70% !important;
+        height: 50vh;
+    }
+    .AskedTagBilling{
+        width: 62% !important;
+    }
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    .BillSection{
+        font-size: 0.6em;
+    }
+    .BillingCard{
+        width: 90%;
+        /* margin: 5% 0%; */
+        margin-top: 25%;
+        /* height: 50vh; */
+        padding: 6%;
+        /* padding: ; */
+    }
+    .BillingCard div {
+        padding: 1.8% 1% !important;
+    }
+    
+}
+
+.billingBoth{
+    display: flex;
+}
+.AskedTagBilling{
+    width: 42%;
+}
+.BillingCard{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: #333;
+    font-weight: 500;
+}
+.BillingCard div{
+    padding: 1%;
+}
+.allMedH2{
+    color: #57567E;
+}
+
+.checkupCost{
+    color: #555;
+}
+
+.TotalMedCost{
+    color: #555;
+}
+.allMedicines{
+    font-size: 1.3em;
+}
+.BillingCardGap{
+    width: 90%;
+    /* margin: auto; */
+}
+
+.BillSection{
+    background: linear-gradient(#c9c7f3 , #fff);
+}

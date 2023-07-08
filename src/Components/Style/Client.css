@@ -1,0 +1,133 @@
+#personalInfo{
+    margin: 3% auto; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(#94b7b7 , #fff);
+}
+
+#prfImg{
+    width: 15%;
+}
+
+.upperCardPersonalInfo{
+    padding-left: 7%;
+    display: flex;
+}
+
+
+#prfImg{
+    width: 19%;
+    margin: 5%;
+    border-radius: 127px;
+}
+
+#personalInfoName, #personalInfoOccupation, #personalInfoAddress{
+    padding: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#personalInfoName{
+    color: black;
+    font-size: 25px;
+}
+
+#personalInfoOccupation{
+
+    color:#6890F3;
+}
+
+#personalInfoAddress{
+    color: #6B779A;
+
+}
+.infoProvided{
+    display: flex;
+    color: black;
+    height: 7vh;
+}
+
+.profileGiveGap {
+    /* margin: 2% 54%; */
+    position: absolute;
+    left: 42%;
+}
+.infoProvided label {
+    width: 25%;
+    padding: 0 6%;
+    color: dark;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#writtenPersonalInfo{
+    color: #7C82A2;
+}
+
+@media only screen and (max-width: 800px) {
+    #personalInfo {
+        margin: 27% 5%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+
+    #prfImg {
+        width: 30%;
+    }
+    #personalInfo {
+        margin: 27% 5%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
+    #personalInfo {
+        margin: 41% 7%;
+        font-size: 0.8em;
+        height: 70vh;
+    }
+    #prfImg {
+        width: 38%;
+    }
+}
+
+
+#clientimg1{
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    animation: animateRotate 3s linear infinite;
+    animation-direction: alternate-reverse;
+}
+#clientimg2{
+    position: absolute;
+    /* top: 59%; */
+    right: 5%;
+    bottom: 46%;
+    animation: animateMove 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+#clientimg3{
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    animation: animateRotate2 3s linear infinite;
+}
+
+@keyframes animateRotate2{
+    100%{
+        transform:rotate(300deg)
+    }
+}
+@keyframes animateRotate{
+    100%{
+        transform:rotateY(360deg)
+    }
+}
+
+@keyframes animateMove{
+    100%{
+        transform:translateY(18px);
+    }
+}

@@ -1,0 +1,65 @@
+.footerLi {
+    list-style: none;
+    width: 18%;
+    padding: 3%;
+}
+#footerInput:focus {
+    outline: none;
+
+}
+
+.searchBoxFooter {
+    width: 83%;
+    background-color: white;
+    margin-top: 3%;
+}
+#subscribeFooterSend {
+    border-radius: 19px;
+    padding: 4% 9.3%;
+    border: none;
+    /* marg */
+    background-image: linear-gradient(to right, rgb(176, 163, 73), rgb(209, 193, 89));
+    color: white;
+    font-size: 0.8em;
+
+}
+
+#footerInput::placeholder {
+    font-size: 0.6em;
+    padding-left: 8%;
+}
+
+#footerInside {
+    padding: 2%;
+    background-color: #1B212E;
+    color: white;
+}
+
+.footerDownUl{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1210px) {
+    .footerLi {
+        width: 300px;
+        margin: auto;
+    }
+    .footerDown{
+        flex-direction: column;
+    }
+    .footerDownUl li{
+        padding: 10% 10% !important;
+    }
+}
+
+@media only screen and (max-width: 1369px) {
+    .searchBoxFooter {
+        width: 83%;
+    } 
+}
+@media only screen and (max-width: 1305px) {
+    .searchBoxFooter {
+        width: 83%;
+    }    
+}

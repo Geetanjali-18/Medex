@@ -1,0 +1,199 @@
+#appointmentCard {
+    /* background-color: #fff; */
+    /* width: 15%; */
+    width: 273px;
+    /* padding: 2%; */
+    margin: 4%;
+    border-radius: 12px;
+    /* background-image: linear-gradient(90deg, black 0%, black 0%, #F27733 0%, #F27733 100%); */
+    transition: all ease-out 0.3s;
+    z-index: 1;
+    overflow: hidden;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor:context-menu;
+    flex-wrap: wrap;
+}
+#appointmentCard p{
+    color: #222;
+    padding-left: 7%;
+}
+
+#appointmentCard:hover::before {
+    width: 273px;
+    
+}
+
+
+#appointmentCard:hover{
+    transform: scale(1.04);
+    /* transform: translateY(10px); */
+}
+
+#appointmentCard:hover #appointmentCard::before{
+    /* transform: scale(1.1); */
+    /* transform: translateY(10px); */
+    height: 50%;
+}
+
+#appointmentCard:hover #appPara {
+    color: white;
+    
+}
+#appointmentCard:hover #appHead2 {
+    color: white;
+    
+}
+
+#appointmentCard:hover #appHead1{
+    font-size: 6em;
+    background: transparent;
+    background-color: transparent;
+    /* border: 2px solid white; */
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    /* text-shadow: #ffdcc9 -5.05px 5.95px 0.6px; */
+    text-shadow: rgba(255, 255, 255, 0.15) -5.05px 5.95px 0.6px;
+}
+/* #appointmentCard:hover::before {
+    color: white;
+    } */
+
+/* #appointmentCard {
+    z-index: 3;
+} */
+
+#appointmentCard::before {
+    background-color: #F27733;
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    content: '';
+    /* background-color: #F27733; */
+    width: 273px;
+    /* left: 0; */
+    /* padding: 2%; */
+    /* margin: auto; */
+    border-radius: 12px;
+    /* background-image: linear-gradient(90deg, black 0%, black 0%, #F27733 0%, #F27733 100%); */
+    transition: all ease-out 0.3s;
+    z-index: -1;
+    /* transform: translate(-274px); */
+    width: 0;
+}
+
+
+#appHead1{
+    font-size: 6em;
+    background: transparent;
+    background-color: transparent;
+    /* border: 2px solid white; */
+    color: transparent;
+    -webkit-text-stroke: 2px #F27733;
+    padding-left: 7%;
+    text-shadow: #ffdcc9 -5.05px 5.95px 0.6px;
+    /* text-shadow: rgba(255, 255, 255, 0.15) -5.05px 5.95px 0.6px; */
+}
+#appHead2{
+    color: #F27733;
+    padding-left: 7%;
+}
+#appPara{
+    color: white;
+    padding-left: 7%;
+}
+#appBtn {
+    border-radius: 11px;
+    padding: 4% 3%;
+    border: none;
+    color: #F27733;
+    width: 58%;
+    font-weight: bold;
+    display: flex;
+    margin-top:12% ;
+    margin-left: 7%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+#viewMoreArrowDiv {
+    margin: padding 3% 10%;
+    padding: 6% 8%;
+    background-color: white;
+    color: rgb(0, 80, 96);
+    border-radius: 5px;
+}
+
+#viewMoreParaDiv{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: rgb(0, 80, 96);
+}
+
+
+#appointmentCard:hover #viewMoreArrowDiv {
+    margin: padding 3% 10%;
+    padding: 6% 8%;
+    background-color: #F27733;
+    color: white;
+    border-radius: 5px;
+    /* bac */
+}
+
+#appointmentCard:hover #viewMoreParaDiv{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: #F27733;
+}
+#appointmentCard:hover #appBtn{
+    background-color: white;
+    /* bac */
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #appointmentCard {
+        width: 222px;
+        font-size: 0.7em;
+    }
+
+  }
+
+  .bookLabelsDiv{
+    display: flex;
+    padding: 2%;
+  }
+  .BookingCards {
+    margin-left: 25%;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-weight: 700;
+    margin-top: 2%;
+    background-color: white;
+    width: 50%;
+    border-radius: 25px;
+    padding: 2%;
+}
+.bookSpaceHead{
+    text-align: center;
+    padding: 2%;
+    color: #222;
+}
+.bookAns{
+    position: absolute;
+    left: 50%;
+    padding: 0%;
+}
+
+.bookAsk{
+    padding: 2%;
+}
+
+
+.bookSpace{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: #EDF1FD;
+}

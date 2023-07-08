@@ -1,0 +1,19 @@
+.LogoHomeCard{
+    color: #3D42B5;
+    background-color: white;
+    width: 15%;
+    height: 17%;
+    text-align: center;
+    border-radius: 74px;
+    margin: 4% 0%;  
+}
+.cardHome{
+    padding: 2.5%;
+}
+.page3init{
+    padding: 0% 12%;
+    width: 30%;
+}
+.page3imgDiv{
+    width: 70%;
+}

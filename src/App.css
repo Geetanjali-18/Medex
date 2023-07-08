@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Kalam&family=Merriweather&family=Open+Sans&family=Playfair+Display:wght@400;700&family=Poppins&family=Russo+One&family=Titillium+Web:wght@700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.navItem{
+  font-size: 0.8em;
+  list-style: none;
+}
+.header{
+  box-sizing: border-box;
+  font-size: 1em;
+}
+:root{
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG:rgb(225,225,235);
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.flex{
+   display:flex;
+   align-items: center;
+}
+
+.btn{
+  padding:.6rem 1.5rem;
+  background:var(--gradientColor);
+  border-radius:3rem;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn a{
+  color:var(--whiteColor);
+  font-weight:500;
+}
+
+.btn:hover{
+  background:var(--SecondaryColor);
+}
+

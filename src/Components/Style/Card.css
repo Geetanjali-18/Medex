@@ -1,0 +1,9 @@
+.card {
+    text-align: center;
+    width: 20%;
+    color: white;
+    margin: auto;
+    background: linear-gradient(black, black) padding-box, linear-gradient(to bottom, red, purple) border-box;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}

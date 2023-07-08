@@ -1,0 +1,237 @@
+ul{
+    display: flex;
+}
+#navBar{
+    background-image: linear-gradient(45deg, #2d2d2d, transparent);
+    color: white;
+    /* border-bottom:2px solid white; */
+}
+.liNavbarDownA{
+    color: white;
+    text-decoration: none;
+}
+
+.navBlur {
+    /* background-color: transparent; */
+    height: 22%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    backdrop-filter: blur(10px);
+}
+.accountOnNav{
+    font-size: 0.7em;
+}
+.mNMenu{
+    display: none;
+}
+.mNSearch{
+    display: none;
+}
+.liNavbar{
+    list-style: none;
+    padding: 2%;
+    margin: auto;
+}
+.upBlank{
+    width: 50%;
+}
+.searchPart {
+    border: 2px solid #d6d6d6;
+    height: 162%;
+    padding: 8%;
+    display: flex;
+    border-radius: 47px;
+    width: 208px;
+}
+.navSearchBtn{
+    background-color: transparent;
+    border-radius: 12px;
+    width: 19%;
+    margin: 2%;
+    color: white;
+}
+.searchInp{
+    border: none;
+    /* border-left: none; */
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+}
+.searchInp:focus {
+    outline: none;
+  }
+.navSearchBtn{
+    border: none;
+    cursor: pointer;
+}
+.downUl{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.liNavbarDown {
+    padding: 1% 2%;
+    margin: 0.5% auto;
+    border-radius: 12px;
+}
+
+.upUl{
+    flex-wrap: wrap;
+    display: flex;
+}
+.navbarGap{
+    width: 100%;
+}
+
+#HomeNav:hover{
+    background-image: linear-gradient(90deg, #555555, transparent);
+    text-shadow: 1px 1px 20px white;
+    /* background-color: white; */
+}
+#ServicesNav:hover{
+    background-image: linear-gradient(45deg, #555555, transparent);
+    text-shadow: 1px 1px 20px white;
+    /* background-color: white; */
+}
+#ContactNav:hover{
+    background-image: linear-gradient(45deg, #555555, transparent);
+    text-shadow: 1px 1px 20px white;
+    /* background-color: white; */
+}
+#AboutNav:hover{
+    background-image: linear-gradient(45deg, #555555, transparent);
+    text-shadow: 1px 1px 20px white;
+    /* background-color: white; */
+}
+#LoginNav:hover{
+    background-image: linear-gradient(45deg, #555555, transparent);
+    text-shadow: 1px 1px 20px white;
+    /* background-color: white; */
+}
+
+@media only screen and (max-width: 1139px) and (min-width:639px) {
+    .moreLi{
+        width: 33%;
+    }
+    .upBlank{
+        width: 28%;
+    }
+    
+}
+
+@media only screen and (max-width: 639px) {
+    .navBlur {
+        height: 7%;
+    }
+
+    .liNavbarDown{
+        transition: all 0.4s ease-out;
+    }
+    
+    .downUl {
+        
+        flex-direction: column;
+    }
+    .mNMenu{
+        display: block;
+    }
+    .mNSearch{
+        background-color: white;
+        display: block;
+    }
+    .MobileNav1{
+        height: 20px;
+    }
+    .upBlank{
+        width: 0% !important;
+    }
+    /* .liNavbar{
+        flex-direction: column;
+    } */
+    .upUl{
+        flex-direction: column;
+    }
+    .accountOnNav{
+        display: none;
+    }
+    .liNavbar{
+        width: 43%;
+    }
+    .searchPart {
+        border: 2px solid #d6d6d6;
+        /* height: 162%; */
+        padding: 4% 17%;
+        display: flex;
+        border-radius: 0;
+        margin: auto;
+        width: 34%;
+        transition:  all 0.4s ease-out ;
+    }
+    .mNSearch{
+        width: 10%;
+        background-color: white;
+        color: black;
+    }
+    .mNSearch:focus + .moreLi{
+        display: block !important;
+    }   
+    .moreLi{
+        width: 96% !important;
+        background-color: black;
+        color: white;
+        display: none;
+    }
+    .searchInp{
+        background-color: transparent;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+        color: white;
+    }
+    .navSearchBtn{
+        color: white;
+    }
+    .MobileNav1{
+        /* height: 21px; */
+    }
+    .NavBottomLayer{
+        display: none;
+        background-color:black ;
+        color: white;
+    }
+    .navbarGap{
+        /* display: none; */
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width: 549px) {
+    .searchInp{
+        width: 200%;
+    }
+    .navSearchBtn{
+        padding: 4% 7%;
+    }
+    .searchPart {
+        padding: 4%;
+        /* width: 191px; */
+    }
+}
+
+
+@media only screen and (max-width: 452px) {
+    
+    .searchPart {
+        /* width: 171px; */
+    }
+}
+
+
+@media only screen and (max-width: 374px) {
+    
+    .searchPart {
+        /* padding: 4%; */
+        /* width: 128px; */
+    }
+}

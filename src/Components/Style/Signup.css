@@ -1,0 +1,152 @@
+.divBody3{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    height: 100vh;
+}
+.signup-section{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.errorMsg{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    color: red;
+    margin: 0px auto;
+    text-align: center;
+    /* background:white; */
+    /* background: transparent; */
+    animation: none;
+}
+
+.signup-box{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background:transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.signup-box form h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.signupinput-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+
+.signupinput-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.signupinput-box input:focus~label,
+.signupinput-box input:valid~label{
+    top: -5px;
+}
+
+
+.signupinput-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    padding: 0px 38px 0px 5px;
+}
+
+.signupinput-box .icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.remember-forgot{
+    margin: -15px 0 15px;
+    position: relative;
+    color: black;
+}
+.remember-forgot input{
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.remember-forgot a:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+.btnSign{
+    width: 100%;
+    height: 40px;
+    background-color: #f17732;
+    border: none;
+    outline: none;
+    border-radius:40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    /* margin-top: 0; */
+}
+.btnSign:disabled{
+    background-color: gray;
+}
+.register-link{
+    margin: 10px auto;
+    color: black;
+}
+.register-link a{
+    cursor: pointer;
+}
+.register-link p a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+@media (max-width:360px){
+    .signup-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+}
